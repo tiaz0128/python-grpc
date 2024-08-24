@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example;
+
+// Person 메시지 정의
+message Person {
+    string name = 1;
+}
+
+// PersonWrapper 메시지 정의
+message PersonWrapper {
+    Person person = 1;
+}
