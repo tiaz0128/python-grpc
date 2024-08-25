@@ -24,15 +24,17 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cperson.proto\x12\x07\x65xample\"\x16\n\x06Person\x12\x0c\n\x04name\x18\x01 \x01(\t\"0\n\rPersonWrapper\x12\x1f\n\x06person\x18\x01 \x01(\x0b\x32\x0f.example.Personb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cperson.proto\"\xcc\x01\n\x06Person\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03\x61ge\x18\x02 \x01(\x05\x12\x1e\n\x06gender\x18\x03 \x01(\x0e\x32\x0e.Person.Gender\x12\x0f\n\x07hobbies\x18\x04 \x03(\t\x12 \n\x07\x61\x64\x64ress\x18\x05 \x01(\x0b\x32\x0f.Person.Address\x1a\'\n\x07\x41\x64\x64ress\x12\x0e\n\x06street\x18\x01 \x01(\t\x12\x0c\n\x04\x63ity\x18\x02 \x01(\t\"+\n\x06Gender\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x08\n\x04MALE\x10\x01\x12\n\n\x06\x46\x45MALE\x10\x02\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'person_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_PERSON']._serialized_start=25
-  _globals['_PERSON']._serialized_end=47
-  _globals['_PERSONWRAPPER']._serialized_start=49
-  _globals['_PERSONWRAPPER']._serialized_end=97
+  _globals['_PERSON']._serialized_start=17
+  _globals['_PERSON']._serialized_end=221
+  _globals['_PERSON_ADDRESS']._serialized_start=137
+  _globals['_PERSON_ADDRESS']._serialized_end=176
+  _globals['_PERSON_GENDER']._serialized_start=178
+  _globals['_PERSON_GENDER']._serialized_end=221
 # @@protoc_insertion_point(module_scope)
