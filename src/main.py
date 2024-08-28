@@ -1,12 +1,13 @@
-import person_pb2
+import route_guide_pb2 as pb2
+from google.protobuf.json_format import MessageToJson, Parse
 
-person = person_pb2.Person()
-person.name = "John Doe"
+person = pb2.Person()
+person.name = "Tiaz0128"
 
 serialized = person.SerializeToString()
 assert isinstance(serialized, bytes)
 
-new_person = person_pb2.Person()
+new_person = pb2.Person()
 new_person.ParseFromString(serialized)
 
-print(new_person.name == person.name)
+print(new_person.name)
